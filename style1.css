@@ -1,0 +1,685 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Montserrat");
+
+:root {
+    --montserrat: 'Montserrat', sans-serif;
+    --roboto: 'Roboto', serif;
+}
+
+.empty {
+    background-color: rgb(0,200,200);
+}
+
+.top1 h5 {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    width: 350px;
+}
+
+.dropdown-menu a {
+    margin-left: -18px;
+    color: gray;
+}
+
+.sale {
+    width: 300px;
+    height: 110px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 25px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.upp {
+    text-transform: uppercase;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.nav1,
+.footer2 {
+    background-color: rgb(51,51,51);
+    height: 40px;
+}
+
+.footer2 .gray {
+    margin-top: 10px;
+}
+
+.footer,
+.footer1 {
+    background-color: lightgrey;
+}
+
+
+.footer1 h6 {
+    font-size: 16px;
+    color: rgb(51,51,51);
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-top: 80px;
+}
+
+.footer1 a {
+    color: gray;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+.div1 {
+    height: 130px;
+    width: 550px;
+    background-color: rgb(51,51,51);
+    color: lightgrey;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-right: 20px;
+}
+
+.div2 {
+    height: 130px;
+    width: 550px;
+    background-color: rgb(0,200,200);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.div11 {
+    padding: 5% 5%;
+}
+
+.div22 {
+    padding: 10% 5%;
+}
+
+.div22 a {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.div22 a:hover {
+    color: black;
+}
+
+.gray {
+    color: lightgrey;
+}
+
+.blue {
+    color: rgb(0,200,200);
+}
+
+.grey2 {
+    color: rgb(51,51,51);
+    font-family: var(--montserrat);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+a:hover {
+    color: rgb(0,200,200);
+}
+
+/*button search*/
+
+form.example input[type=text] {
+    padding: 3px 7px;
+    font-size: 15px;
+    border: 1px solid gray;
+    float: left;
+    width: 60%;
+    background: white;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 3px 7px;
+    background: grey;
+    color: white;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1 {
+    font-family: var(--montserrat);
+    font-size: 300px;
+    font-weight: 900;
+    height: 400px;
+    letter-spacing: 180px;
+}
+
+.in {
+    z-index: 1;
+}
+.index1 {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    z-index: 1;
+}
+
+.index0 {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    z-index: 0;
+   
+}
+
+.body {
+    z-index: 1;
+    margin-top: 600px;
+    background-color: lightgray;
+}
+
+.section,
+.footer1,
+footer {
+    position: relative;
+}
+
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.con {
+  position: relative;
+  width: 100%;
+  
+}
+
+/* Make the image to responsive */
+.imageI {
+  display: block;
+  height: auto;
+}
+
+.model1 {
+    height: 300px;
+    width: 220px;
+    margin: 30px;
+}
+
+.model2 {
+    height: 550px;
+    width: 400px;
+    margin: 40px;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.modelMini {
+    width: 50px;
+    height: 60px;
+    margin: 10px;
+}
+
+#bigimg {
+    width: 150px;
+    height: 160px;
+}
+
+.overlay1 {
+  position: absolute; 
+  top: 0;
+  right: 0;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  padding: 15px;
+  
+}
+
+
+
+/* When you mouse over the container, fade in the overlay title */
+.con:hover .overlay {
+  opacity: 1;
+}
+
+.con:hover .overlay1 {
+  opacity: 1;
+}
+
+
+.zoom {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+
+.footer {
+    margin: 100px 0;
+}
+
+.lookbook {
+    font-size: 14px;
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.lookbook h5 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.lookbook span {
+    font-weight: 700;
+}
+
+.lookbook p {
+    margin-top: 20px;
+    color: gray;
+}
+
+.bt {
+    background-color: white;
+    border: solid lightgray 1px;
+}
+
+.bt:hover {
+    background-color: rgb(0,200,200);
+    border: 0px;
+}
+
+
+
+
+/* =======================================The brand ==================================================== */
+.top1 {
+    width: 100%;
+}
+
+.top {
+    background-image: url(img/thebrand111.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    color: rgb(51,51,51);
+}
+
+.top h3 {
+    font-size: 40px;
+    padding: 5% 0;
+    font-family: var(--monsterrat);  
+}
+
+.bigH {
+    font-weight: 800;
+}
+
+.smallH {
+    font-size: 30px;
+}
+
+.main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.thebrand1 {
+    margin-bottom: 50px;
+    text-align: justify;
+    width: 100%;
+    color: gray;
+}
+
+.thebrandH {
+    margin-bottom: 35px;
+    color: darkgray; 
+}
+
+
+
+/* ===========================================Local stores =============================================== */
+
+.main1 {
+    background-color: lightgray;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.lc p,
+.lc h6 {
+    color: gray;
+    margin-top: 10px;
+}
+
+.lc h5 {
+    font-size: 25px;
+}
+
+.btt {
+    width: 70%;
+    height: 45px;
+    border: solid black 1px;
+    font-size: 20px;
+}
+
+.iframe {
+    background-color: lightgray;
+    color: gray;
+}
+
+.iframe .col-md-4 {
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+
+
+
+/* =======================================Look Book ======================================================= */
+
+.overlay2 {
+  position: absolute;  
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  bottom: 0;
+}
+
+.con:hover .overlay2 {
+  opacity: 1;
+}
+
+.containerI {
+    position: relative;
+    text-align: center; 
+}
+
+.top-left {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.top-right {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+}
+
+.containerI img {
+    width: 99%;
+}
+.imgLookBook {
+    margin-bottom: 30px;
+}
+
+.containerI h5 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.containerI2 {
+    background-color: rgb(162,163,169);
+    height: 100%;
+}
+
+.containerI2 img {
+    width: 60%;
+    margin: 0 20%;
+    height: 100%;
+}
+
+.containerI2 h5 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.win {
+    color: rgb(0,200,200);
+    font-weight: 950;
+    letter-spacing: 4px;
+    font-size: 45px;
+}
+
+.winBig {
+    font-size: 120px;
+    
+}
+
+
+
+/* ========================================Product View =================================================== */
+
+.pn {
+    font-size: 35px;
+}
+
+.main2 {
+    margin: 50px 8%;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 600px;   
+}
+
+.hProduct {
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.fa-star {
+    margin: -2px;
+    font-size: 14px;
+}
+
+.tProduct {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.gray2 a {
+    margin-left: 15px;
+}
+
+.ps {
+    font-size: 14px;
+    font-weight: 600;
+}
+.ps1 {
+    margin-bottom: 12px;
+}
+
+.ar {
+    margin-left: 6px;
+    border-left: solid rgb(143,143,143) 1px;
+    border-right: solid rgb(143,143,143) 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.grayP {
+    color: rgb(143,143,143);
+    font-size: 14px;
+}
+
+.grayP li {
+    list-style-type: disc;
+    margin-left: -20px;
+}
+
+select {
+    width: 100%;
+    height: 30px;
+}
+
+.bP {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    font-size: 20px;
+    border: solid rgb(51,51,51) 1px;
+}
+.bu {
+     margin-top: 50px;
+}
+
+.bP:hover {
+    background-color: rgb(51,51,51);
+    color: white;
+}
+
+.gray2 {
+    color: rgb(51,51,51);
+}
+
+.blueP {
+    color: rgb(0,200,200);
+}
+
+.price {
+    font-size: 33px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.lt {
+    text-decoration: line-through;
+    margin-right: 15px;
+}
+
+.checked {
+    color: burlywood;
+}
+
+article .navbar {
+    width: 100%;
+    background-color: lightgray;
+}
+
+article .navbar li {
+    margin-right: 50px;
+}
+
+article .navbar li:hover{
+    background-color: rgb(51,51,51);
+}
+
+article .navbar a:hover {
+    color: white;
+}
+
+.iframe2 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* ========================================Sign in ========================================================= */
+
+.f {
+    margin-top: 20px;
+    
+
+}
+
+.signinA {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(0,200,200);
+}
+
+.signinT {
+    font-size: 13px;
+}
+
+.imgShadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imgLookBook {
+    width: 100%;
+    height: 350px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 200px;
+        
+    }
+    .index0 {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    .container-fluid {
+        width: 100%;
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
